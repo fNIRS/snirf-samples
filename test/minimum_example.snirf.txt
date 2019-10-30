@@ -1,0 +1,208 @@
+HDF5 "minimum_example.snirf" {
+GROUP "/" {
+   DATASET "formatVersion" {
+      DATATYPE  H5T_STRING {
+         STRSIZE 1;
+         STRPAD H5T_STR_NULLTERM;
+         CSET H5T_CSET_ASCII;
+         CTYPE H5T_C_S1;
+      }
+      DATASPACE  SIMPLE { ( 3, 1 ) / ( 3, 1 ) }
+      DATA {
+      (0,0): "1",
+      (1,0): ".",
+      (2,0): "0"
+      }
+   }
+   GROUP "nirs" {
+      GROUP "metaDataTags" {
+         DATASET "SubjectID" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 1;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 7, 1 ) / ( 7, 1 ) }
+            DATA {
+            (0,0): "d",
+            (1,0): "e",
+            (2,0): "f",
+            (3,0): "a",
+            (4,0): "u",
+            (5,0): "l",
+            (6,0): "t"
+            }
+         }
+         DATASET "MeasurementDate" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 1;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 7, 1 ) / ( 7, 1 ) }
+            DATA {
+            (0,0): "u",
+            (1,0): "n",
+            (2,0): "k",
+            (3,0): "n",
+            (4,0): "o",
+            (5,0): "w",
+            (6,0): "n"
+            }
+         }
+         DATASET "MeasurementTime" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 1;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 7, 1 ) / ( 7, 1 ) }
+            DATA {
+            (0,0): "u",
+            (1,0): "n",
+            (2,0): "k",
+            (3,0): "n",
+            (4,0): "o",
+            (5,0): "w",
+            (6,0): "n"
+            }
+         }
+         DATASET "LengthUnit" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 1;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 2, 1 ) / ( 2, 1 ) }
+            DATA {
+            (0,0): "m",
+            (1,0): "m"
+            }
+         }
+      }
+      GROUP "data" {
+         DATASET "dataTimeSeries" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+         DATASET "time" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+         GROUP "measurementList" {
+            DATASET "sourceIndex" {
+               DATATYPE  H5T_IEEE_F64LE
+               DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+               DATA {
+               }
+            }
+            DATASET "detectorIndex" {
+               DATATYPE  H5T_IEEE_F64LE
+               DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+               DATA {
+               }
+            }
+            DATASET "wavelengthIndex" {
+               DATATYPE  H5T_IEEE_F64LE
+               DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+               DATA {
+               }
+            }
+            DATASET "dataType" {
+               DATATYPE  H5T_IEEE_F64LE
+               DATASPACE  SIMPLE { ( 1, 1 ) / ( 1, 1 ) }
+               DATA {
+               (0,0): 1
+               }
+            }
+            DATASET "dataTypeIndex" {
+               DATATYPE  H5T_IEEE_F64LE
+               DATASPACE  SIMPLE { ( 1, 1 ) / ( 1, 1 ) }
+               DATA {
+               (0,0): 1
+               }
+            }
+         }
+      }
+      GROUP "aux" {
+         DATASET "name" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 1;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+         DATASET "dataTimeSeries" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+         DATASET "time" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+         DATASET "timeOffset" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 1, 1 ) / ( 1, 1 ) }
+            DATA {
+            (0,0): 0
+            }
+         }
+      }
+      GROUP "stim" {
+         DATASET "name" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 1;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+         DATASET "data" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+      }
+      GROUP "probe" {
+         DATASET "wavelengths" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+         DATASET "sourcePos" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+         DATASET "detectorPos" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 0, 0 ) / ( 0, 0 ) }
+            DATA {
+            }
+         }
+      }
+   }
+}
+}
