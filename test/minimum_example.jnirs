@@ -1,0 +1,39 @@
+{
+	"SNIRFData": {
+		"formatVersion": "1.0",
+		"metaDataTags": {
+			"SubjectID": "default",
+			"MeasurementDate": "2020-05-16",
+			"MeasurementTime": "17:05:14",
+			"LengthUnit": "mm",
+			"TimeUnit": "s",
+			"FrequencyUnit": "Hz"
+		},
+		"data": {
+			"dataTimeSeries": [],
+			"time": [],
+			"measurementList": {
+				"sourceIndex": [],
+				"detectorIndex": [],
+				"wavelengthIndex": [],
+				"dataType": 1,
+				"dataTypeIndex": 1
+			}
+		},
+		"aux": {
+			"name": "",
+			"dataTimeSeries": [],
+			"time": [],
+			"timeOffset": 0
+		},
+		"stim": {
+			"name": "",
+			"data": []
+		},
+		"probe": {
+			"wavelengths": [],
+			"sourcePos2D": [],
+			"detectorPos2D": []
+		}
+	}
+}
