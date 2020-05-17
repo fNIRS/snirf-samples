@@ -63,7 +63,8 @@ sudo apt-get install python-h5py python-numpy
 Once these tools are installed, one can start python and run
 ```
 import h5py
-import 
+import numpy as np
+
 dat=h5py.File('datafile.snirf','r')
 d1=np.array(dat.get('/nirs/data1/dataTimeSeries'));
 ```
