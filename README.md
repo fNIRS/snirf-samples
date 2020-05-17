@@ -123,7 +123,7 @@ To load the data in MATLAB/Octave, one can use the below sample codes
 
 The `.snirf` files can be loaded using 
 - MATLAB's HDF5 API
-- [EasyH5 toolbox](https://github.com/fangq/zmat) with [JSNIRY toolbox](https://github.com/fangq/jsnirfy)
+- [EasyH5 toolbox](https://github.com/fangq/zmat) with [JSNIRFY toolbox](https://github.com/fangq/jsnirfy)
 - [snirf_homer3](https://github.com/fNIRS/snirf_homer3) toolbox
 
 
@@ -138,7 +138,7 @@ data=loadsnirf('datafile.snirf');
 The `.jnirs` files can be loaded using 
 - MATLAB's `jsondecode` function with `jdatadecode` in [JSONLab toolbox](https://github.com/fangq/jsonlab) and [ZMat toolbox](https://github.com/fangq/zmat)
 or
-- [JSNIRY toolbox](https://github.com/fangq/jsnirfy) combined with 
+- [JSNIRFY toolbox](https://github.com/fangq/jsnirfy) combined with 
 - [JSONLab toolbox](https://github.com/fangq/jsonlab) and 
 - [ZMat toolbox](https://github.com/fangq/zmat)
 
@@ -151,7 +151,7 @@ data=loadjsnirf('datafile.jnirs');
 #### Binary JSNIRF files
 
 The `.bnirs` files can be loaded using 
-- [JSNIRY toolbox](https://github.com/fangq/jsnirfy) combined with 
+- [JSNIRFY toolbox](https://github.com/fangq/jsnirfy) combined with 
 - [JSONLab toolbox](https://github.com/fangq/jsonlab) and 
 - [ZMat toolbox](https://github.com/fangq/zmat)
 
