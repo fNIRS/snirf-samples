@@ -141,7 +141,7 @@ The `.jnirs` files can be loaded using
 or
 - [JSNIRFY toolbox](https://github.com/fangq/jsnirfy) combined with 
 - [JSONLab toolbox](https://github.com/fangq/jsonlab) and 
-- [ZMat toolbox](https://github.com/fangq/zmat)
+- [ZMat toolbox](https://github.com/fangq/zmat) (not needed for MATLAB but required for Octave)
 
 Once these tools are installed, one can start MATLAB and run
 
@@ -154,7 +154,7 @@ data=loadjsnirf('datafile.jnirs');
 The `.bnirs` files can be loaded using 
 - [JSNIRFY toolbox](https://github.com/fangq/jsnirfy) combined with 
 - [JSONLab toolbox](https://github.com/fangq/jsonlab) and 
-- [ZMat toolbox](https://github.com/fangq/zmat)
+- [ZMat toolbox](https://github.com/fangq/zmat) (not needed for MATLAB but required for Octave)
 
 and then load the binary jdata file using
 ```
