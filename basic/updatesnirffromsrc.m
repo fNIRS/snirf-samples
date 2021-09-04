@@ -2,7 +2,7 @@
 % as human-readable source files
 %
 % To make changes to the sample data files, it is recommended to use a text-editor
-% to modify the .jsnirf file first, and then run this script to 
+% to modify the .jnirs file first, and then run this script to update sample files.
 
 if(~exist('loadjsnirf','file'))
   error('you must first install jsnirfy toolbox from https://github.com/fNIRS/jsnirfy')
