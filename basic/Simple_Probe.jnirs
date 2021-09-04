@@ -1360,8 +1360,8 @@ G3KbXMGNuDG3xZXchKu4KVdzM67h5lzwh/D/fG8Q3A==
 			}
 		},
 		"probe": {
-			"correlationTimeDelay": 0,
-			"correlationTimeDelayWidth": 0,
+			"correlationTimeDelays": 0,
+			"correlationTimeDelayWidths": 0,
 			"detectorLabels": [
 				"D1",
 				"D2",
@@ -1370,8 +1370,8 @@ G3KbXMGNuDG3xZXchKu4KVdzM67h5lzwh/D/fG8Q3A==
 			],
 			"frequency": 70000000,
 			"sourceLabels": "S1",
-			"timeDelay": 0,
-			"timeDelayWidth": 0,
+			"timeDelays": 0,
+			"timeDelayWidths": 0,
 			"wavelengths": [690,830],
 			"detectorPos2D": [
 				[0,0],
@@ -1391,14 +1391,11 @@ G3KbXMGNuDG3xZXchKu4KVdzM67h5lzwh/D/fG8Q3A==
 			},
 			{
 				"data": [50.2,5,1],
-				"name": "3"
+				"name": "2"
 			},
 			{
 				"data": [23.7,5,1],
-				"name": [
-					"3",
-					" "
-				]
+				"name": "3"
 			}
 		],
 		"aux": {

@@ -20789,8 +20789,8 @@ mA==
 			}
 		},
 		"probe": {
-			"correlationTimeDelay": 0,
-			"correlationTimeDelayWidth": 0,
+			"correlationTimeDelays": 0,
+			"correlationTimeDelayWidths": 0,
 			"detectorLabels": [
 				"D1",
 				"D2",
@@ -20808,8 +20808,8 @@ mA==
 				"S3",
 				"S4"
 			],
-			"timeDelay": 0,
-			"timeDelayWidth": 0,
+			"timeDelays": 0,
+			"timeDelayWidths": 0,
 			"wavelengths": [690,830],
 			"sourcePos2D": [
 				[-2,0],
