@@ -36,7 +36,7 @@ This repository contains 3 types of sample data files
 - The text-based [JSNIRF](https://github.com/OpenJData/jsnirf) data files 
   (`.jnirs`) are actually [JSON](http://json.org) files with 
   [JData-compliant annotations](http://openjdata.org). The JSNIRF/JSON files
-  are even more broadly supported, including platforms where HDF5 is not avaible
+  are broadly supported, including platforms where HDF5 is not avaible
   such as GNU Octave or MATLAB older than R2011a. The `.jnirs` files can be opened
   by a text editor and are directly human-readable.
 
@@ -54,7 +54,7 @@ To load the data in python, one can use the below sample codes
 #### SNIRF files
 
 The `.snirf` files are simply renamed HDF5 (`.h5`) files and thus 
-can be read/written by the `python-h5py` module. To read/write .snirf
+can be read/written by the `python-h5py` module. To read/write `.snirf`
 files, one need to install the below software packages (on Debian/Ubuntu)
 
 ```
@@ -73,10 +73,10 @@ d1=np.array(dat.get('/nirs/data1/dataTimeSeries'));
 #### JSNIRF/JSON files
 
 To read the text JSNIRF files (`.jnirs`, which is a valid JSON file), one needs to install 
-the [pyjdata module](https://github.com/fangq/pyjdata) via
+the [jdata module](https://pypi.org/project/jdata) via
 
 ```
-pip install jdata
+pip install jdata --user
 ```
 
 then open python, and run
@@ -90,19 +90,33 @@ containing the full SNIRF data structure.
 
 #### Binary JSNIRF files
 
-To read the binary JSNIRF files (`.bnirs`), one needs to install `py-ubjson` package
+To read the binary JSNIRF files (`.bnirs`), one needs to install the 
+[bjdata module](https://pypi.org/project/bjdata) in addition to
+[jdata](https://pypi.org/project/jdata)
 ```
-pip install jdata
-pip install py-ubjson
+pip install jdata --user
+pip install bjdata --user
 ```
 and then load the binary jdata file using
 ```
 import jdata as jd
-import ubjson
+import bjdata
 from collections import OrderedDict
 
 data=jd.loadb('datafile.bnirs',object_pairs_hook=OrderedDict);
 ```
+Both `bjdata` and `jdata` moduels can be installed on Debian Bullseye and
+Ubuntu 21.04 or newer via 
+```
+sudo apt-get install python3-jdata python3-bjdata
+```
+For Ubuntu 14.04-20.04, please use the following PPA:
+```
+sudo add-apt-repository ppa:fangq/ppa
+sudo apt-get update
+sudo apt-get install python3-jdata python3-bjdata
+```
+
 
 #### How to access individual data records in Python
 
