@@ -33,15 +33,15 @@ This repository contains 3 types of sample data files
   in the `.snirf` files are set so that data field creation order are preserved.
   One must use approprate HDF5 reading API to retrieve the field creation order.
 
-- The text-based [JSNIRF](https://github.com/OpenJData/jsnirf) data files 
+- The text-based [JSNIRF](https://github.com/NeuroJSON/jsnirf) data files 
   (`.jnirs`) are actually [JSON](http://json.org) files with 
   [JData-compliant annotations](http://openjdata.org). The JSNIRF/JSON files
   are broadly supported, including platforms where HDF5 is not avaible
   such as GNU Octave or MATLAB older than R2011a. The `.jnirs` files can be opened
   by a text editor and are directly human-readable.
 
-- The binary [JSNIRF](https://github.com/OpenJData/jsnirf) data files 
-  (`.bnirs`) are actually [BJData/UBJSON](https://github.com/OpenJData/bjdata) 
+- The binary [JSNIRF](https://github.com/NeuroJSON/jsnirf) data files 
+  (`.bnirs`) are actually [BJData/UBJSON](https://github.com/NeuroJSON/bjdata) 
   files with [JData-compliant annotations](http://openjdata.org). The BJData/UBJSON 
   files are binary JSON files that provides smaller file sizes and fast parsing.
 
