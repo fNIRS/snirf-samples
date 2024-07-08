@@ -1300,10 +1300,10 @@ GEch/gc30FqO
 			},
 			"measurementList": {
 				"dataType": [1,1,1,1,1,1,1,1],
-				"dataTypeIndex": [0,0,0,0,0,0,0,0],
+				"dataTypeIndex": [1,1,1,1,1,1,1,1],
 				"detectorGain": [0,0,0,0,0,0,0,0],
 				"detectorIndex": [1,2,3,4,1,2,3,4],
-				"moduleIndex": [0,0,0,0,0,0,0,0],
+				"moduleIndex": [1,1,1,1,1,1,1,1],
 				"sourceIndex": [1,1,1,1,1,1,1,1],
 				"sourcePower": [0,0,0,0,0,0,0,0],
 				"wavelengthIndex": [1,1,1,1,2,2,2,2]
@@ -1368,7 +1368,7 @@ G3KbXMGNuDG3xZXchKu4KVdzM67h5lzwh/D/fG8Q3A==
 				"D3",
 				"D4"
 			],
-			"frequency": 70000000,
+			"frequencies": 70000000,
 			"sourceLabels": "S1",
 			"timeDelays": 0,
 			"timeDelayWidths": 0,
