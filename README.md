@@ -34,15 +34,15 @@ This repository contains 3 types of sample data files
   One must use approprate HDF5 reading API to retrieve the field creation order.
 
 - The text-based [JSNIRF](https://github.com/NeuroJSON/jsnirf) data files 
-  (`.jnirs`) are actually [JSON](http://json.org) files with 
-  [JData-compliant annotations](http://openjdata.org). The JSNIRF/JSON files
+  (`.jnirs`) are actually [JSON](https://json.org) files with 
+  [JData-compliant annotations](https://neurojson.org). The JSNIRF/JSON files
   are broadly supported, including platforms where HDF5 is not avaible
   such as GNU Octave or MATLAB older than R2011a. The `.jnirs` files can be opened
   by a text editor and are directly human-readable.
 
 - The binary [JSNIRF](https://github.com/NeuroJSON/jsnirf) data files 
   (`.bnirs`) are actually [BJData/UBJSON](https://github.com/NeuroJSON/bjdata) 
-  files with [JData-compliant annotations](http://openjdata.org). The BJData/UBJSON 
+  files with [JData-compliant annotations](https://neurojson.org). The BJData/UBJSON 
   files are binary JSON files that provides smaller file sizes and fast parsing.
 
 
@@ -138,7 +138,7 @@ To load the data in MATLAB/Octave, one can use the below sample codes
 
 The `.snirf` files can be loaded using 
 - MATLAB's HDF5 API
-- [EasyH5 toolbox](https://github.com/fangq/zmat) with [JSNIRFY toolbox](https://github.com/fangq/jsnirfy)
+- [EasyH5 toolbox](https://github.com/NeuroJSON/zmat) with [JSNIRFY toolbox](https://github.com/NeuroJSON/jsnirfy), or
 - [snirf_homer3](https://github.com/fNIRS/snirf_homer3) toolbox
 
 
@@ -151,11 +151,11 @@ data=loadsnirf('datafile.snirf');
 #### JSNIRF/JSON files
 
 The `.jnirs` files can be loaded using 
-- MATLAB's `jsondecode` function with `jdatadecode` in [JSONLab toolbox](https://github.com/fangq/jsonlab) and [ZMat toolbox](https://github.com/fangq/zmat)
+- MATLAB's `jsondecode` function with `jdatadecode` in [JSONLab toolbox](https://github.com/NeuroJSON/jsonlab) and [ZMat toolbox](https://github.com/NeuroJSON/zmat)
 or
-- [JSNIRFY toolbox](https://github.com/fangq/jsnirfy) combined with 
-- [JSONLab toolbox](https://github.com/fangq/jsonlab) and 
-- [ZMat toolbox](https://github.com/fangq/zmat) (not needed for MATLAB but required for Octave)
+- [JSNIRFY toolbox](https://github.com/NeuroJSON/jsnirfy) combined with 
+- [JSONLab toolbox](https://github.com/NeuroJSON/jsonlab) and 
+- [ZMat toolbox](https://github.com/NeuroJSON/zmat) (not needed for MATLAB but required for Octave)
 
 Once these tools are installed, one can start MATLAB and run
 
@@ -166,9 +166,9 @@ data=loadjsnirf('datafile.jnirs');
 #### Binary JSNIRF files
 
 The `.bnirs` files can be loaded using 
-- [JSNIRFY toolbox](https://github.com/fangq/jsnirfy) combined with 
-- [JSONLab toolbox](https://github.com/fangq/jsonlab) and 
-- [ZMat toolbox](https://github.com/fangq/zmat) (not needed for MATLAB but required for Octave)
+- [JSNIRFY toolbox](https://github.com/NeuroJSON/jsnirfy) combined with 
+- [JSONLab toolbox](https://github.com/NeuroJSON/jsonlab) and 
+- [ZMat toolbox](https://github.com/NeuroJSON/zmat) (not needed for MATLAB but required for Octave)
 
 and then load the binary jdata file using
 ```
