@@ -36,8 +36,7 @@ This repository contains 3 types of sample data files
 - The text-based [JSNIRF](https://github.com/NeuroJSON/jsnirf) data files 
   (`.jnirs`) are actually [JSON](https://json.org) files with 
   [JData-compliant annotations](https://neurojson.org). The JSNIRF/JSON files
-  are broadly supported, including platforms where HDF5 is not avaible
-  such as GNU Octave or MATLAB older than R2011a. The `.jnirs` files can be opened
+  are broadly supported, including platforms. The `.jnirs` files can be opened
   by a text editor and are directly human-readable.
 
 - The binary [JSNIRF](https://github.com/NeuroJSON/jsnirf) data files 
@@ -82,8 +81,7 @@ pip install jdata --user
 then open python, and run
 ```
 import jdata as jd
-from collections import OrderedDict
-data=jd.loadt('datafile.jnirs',object_pairs_hook=OrderedDict);
+data=jd.load('datafile.jnirs');
 ```
 to load the JSNIRF/JSON (`.jnirs`) file. The output `data` is a `dict` object
 containing the full SNIRF data structure.
@@ -100,10 +98,7 @@ pip install bjdata --user
 and then load the binary jdata file using
 ```
 import jdata as jd
-import bjdata
-from collections import OrderedDict
-
-data=jd.loadb('datafile.bnirs',object_pairs_hook=OrderedDict);
+data=jd.load('datafile.bnirs';
 ```
 Both `bjdata` and `jdata` moduels can be installed on Debian Bullseye and
 Ubuntu 21.04 or newer via 
@@ -138,9 +133,10 @@ To load the data in MATLAB/Octave, one can use the below sample codes
 
 The `.snirf` files can be loaded using 
 - MATLAB's HDF5 API
-- [EasyH5 toolbox](https://github.com/NeuroJSON/zmat) with [JSNIRFY toolbox](https://github.com/NeuroJSON/jsnirfy), or
+- [EasyH5 toolbox](https://github.com/NeuroJSON/easyh5) with [JSNIRFY toolbox](https://github.com/NeuroJSON/jsnirfy), or
 - [snirf_homer3](https://github.com/fNIRS/snirf_homer3) toolbox
-
+- To read `.snirf` files in GNU Octave 5.0 or newer, one should install the oct-hdf5 toolbox by running
+  `pkg install https://github.com/fangq/oct-hdf5/archive/refs/heads/main.zip`
 
 Once these tools are installed, one can start MATLAB and run
 ```
@@ -195,4 +191,3 @@ https://github.com/fNIRS/snirf/issues
 
 Please feel free to fork our software, making changes, and submit your revision back
 to us via "Pull Requests".
-
